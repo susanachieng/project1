@@ -1,0 +1,39 @@
+body{
+    background-color: white;
+}
+header{
+    background-color: black;
+}
+li a{
+    color: blue;
+    text-align: center;
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    
+}
+nav{
+    float: left;
+    background-color: grey;
+    width: 30%;
+    height: 300px;
+    padding: 20px;
+}
+
+
+img{
+    float: left;
+    width:67%;
+    height: 400px;
+    background-color: white;
+
+}
+footer{
+    background-color: black;
+}
+button{
+    background-color: blue;
+    color: aliceblue;
+    text-align: center;
+    
+}
