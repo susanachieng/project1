@@ -1,6 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: white;
+  background-color: rgba(19, 20, 20, 0.35);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  font-style: normal;
   padding: 0;
   margin: 0;
 }
@@ -12,6 +20,7 @@ header {
   background-position: center;
   text-align: center;
   height: 100px;
+  padding-top: 35px;
 }
 li {
   display: inline;
@@ -19,19 +28,16 @@ li {
   margin: 10px;
 }
 li a {
+  margin-top: 5px;
   color: black;
   text-decoration: none;
 }
 li a:hover {
   color: white;
 }
-img {
+section#About img {
   border-radius: 100px;
-  border: 5px solid grey;
-  font-size: 50px;
-  max-width: 100px;
-  height: auto;
-  padding: 30px;
+  max-width: 150px;
 }
 h2 {
   padding: 10px;
@@ -47,7 +53,7 @@ h2 {
 }
 
 div.code {
-  font-size: 25px;
+  font-size: 23px;
   margin: 60px;
   padding: 0;
 }
@@ -73,16 +79,23 @@ i.fa-react {
   color: lightblue;
 }
 i.fa-whatsapp {
-  font-size: 40px;
+  font-size: 38px;
   color: rgb(19, 167, 19);
 }
 i.fa-linkedin {
-  font-size: 40px;
+  font-size: 38px;
   color: blue;
 }
 i.fa-instagram {
-  font-size: 40px;
+  font-size: 38px;
   color: rgb(255, 192, 203);
+}
+i.fa-square-x-twitter {
+  font-size: 38px;
+}
+#tab {
+  margin-top: 20px;
+  margin-bottom: 0;
 }
 
 footer {
@@ -91,11 +104,15 @@ footer {
   margin: 5px;
 }
 button {
+  float: left;
   background-color: white;
   color: blue;
   text-align: center;
   padding: 10px 10px;
   border: 0;
   cursor: pointer;
-  box-shadow: 10px 10px lightblue;
+  box-shadow: 5px 7px 10px rgba(3, 3, 3, 0.439);
+}
+button:hover {
+  box-shadow: 5px 7px 10px lightblue;
 }
