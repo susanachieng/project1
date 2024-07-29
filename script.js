@@ -47,14 +47,13 @@ console.log(isPrime1);
 console.log(isPrime2);
 
 //function that takes an array as an argument and prints elements of the array individually
-//function printArrayElements(Array) {
-// let Arr = 0;
-// for (i = 0; i < Array.length; i++) {
-//   Arr += i;
-// }
-// return Arr[i];
-//}
-//console.log(printArrayElements([0, 2, 4, 7]));
+function printArrayElements(Array) {
+  Array.forEach((element) => {
+    console.log(element);
+  });
+}
+const myArray = [1, 2, 3, 4, 5];
+printArrayElements(myArray);
 
 function hasEvenNumbers(arr) {
   let count = 0;
