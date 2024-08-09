@@ -1,68 +1,20 @@
-function Person(FirstName, LastName) {
-  this.FirstName = FirstName;
-  this.LastName = LastName;
-  return `$ {this.FirstName} ${this.LastName}`;
-}
-const person1 = new Person("John", "Wick");
-console.log(person1);
+// console.log(document.domain);
+// console.log(document.URL);
+// console.log(document.getElementById(" deposit button"));
+// var depositButton = document.getElementById(" deposit button");
+// depositButton.style.backgroundColor = blue;
+// var transaction = document.querySelector(".transaction");
+// console.log(transaction);
+// transaction.innerText = "list transaction";
+// transaction.computedStyleMap.color = "blue";
 
-//function that takes two numbers and return the sum of the numbers
-function addNumber(x, y) {
-  return x + y;
-}
-console.log(addNumber(4, 3));
-
-//function that takes two numbers , mutiplies and returns the results
-function mutiplyNumbers(x, y) {
-  return x * y;
-}
-console.log(mutiplyNumbers(4, 3));
-
-//function that takes a number as an argument and returns odd or even
-function evenOrOdd(number) {
-  if (number == 7) {
-    return "odd";
-  }
-  if (number == 2) {
-    return "even";
-  }
-}
-const evenOrOdd1 = evenOrOdd(7);
-const evenOrOdd2 = evenOrOdd(2);
-console.log(evenOrOdd1);
-console.log(evenOrOdd2);
-
-//function that takes number as an argument and returns true or false
-function isPrime(number) {
-  if (number == 7) {
-    return true;
-  }
-  if (number == 4) {
-    return false;
-  }
-}
-const isPrime1 = isPrime(7);
-const isPrime2 = isPrime(4);
-console.log(isPrime1);
-console.log(isPrime2);
-
-//function that takes an array as an argument and prints elements of the array individually
-function printArrayElements(Array) {
-  Array.forEach((element) => {
-    console.log(element);
-  });
-}
-const myArray = [1, 2, 3, 4, 5];
-printArrayElements(myArray);
-
-function hasEvenNumbers(arr) {
+function hasPrimeNumbers(arr) {
   let count = 0;
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] % 2 === 0) {
+  for (let i = 0; i <= arr.length; i++)
+    if (arr[i] % 2 !== 0) {
       count++;
     }
-  }
   return count;
 }
-const exampleArray = [0, 2, 4, 7];
-console.log(hasEvenNumbers(exampleArray));
+// const exampleArray = [0, 2, 4, 7];
+console.log(hasPrimeNumbers([0, 2, 4, 7]));
