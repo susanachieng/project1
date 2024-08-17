@@ -7,14 +7,21 @@
 // console.log(transaction);
 // transaction.innerText = "list transaction";
 // transaction.computedStyleMap.color = "blue";
+function isPrime(num) {
+  if (num <= 1) return false;
+  for (let i = 2; i <= num; i++) {
+    if (num % i === 0) return false;
+  }
+  return true;
+}
 
 function hasPrimeNumbers(arr) {
   let count = 0;
-  for (let i = 0; i <= arr.length; i++)
-    if (arr[i] % 2 !== 0) {
+  for (const num of arr)
+    if (isPrime(num)) {
       count++;
     }
   return count;
 }
-// const exampleArray = [0, 2, 4, 7];
-console.log(hasPrimeNumbers([0, 2, 4, 7]));
+const arr = [0, 2, 4, 7];
+console.log(hasPrimeNumbers(arr));
