@@ -1,61 +1,113 @@
-* {
-  margin: 0;
+body {
+  background-color: rgba(19, 20, 20, 0.35);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  font-style: normal;
   padding: 0;
-  box-sizing: border-box;
+  margin: 0;
 }
-h1 {
-  margin: 20px;
+
+header {
+  background-color: grey;
+  background-image: url(images/suzy.mp4);
+  background-size: 100%;
+  background-position: center;
   text-align: center;
+  height: 100px;
+  padding-top: 35px;
 }
-p {
-  text-align: center;
+li {
+  display: inline;
+  padding: 20px;
+  margin: 10px;
 }
-section.centre {
+li a {
+  margin-top: 5px;
+  color: black;
+  text-decoration: none;
+}
+li a:hover {
+  color: white;
+}
+section#About img {
+  border-radius: 100px;
+  max-width: 150px;
+}
+h2 {
+  padding: 10px;
+  margin: 10px;
+  text-transform: uppercase;
+  color: grey;
+}
+#container {
+  display: flex;
+  float: right;
+  padding: 10px;
+  margin: 2px;
+}
+
+div.code {
   font-size: 23px;
   margin: 60px;
   padding: 0;
 }
-div.number {
-  margin-bottom: 20px;
+b {
+  font-size: 10px;
+}
+i.fa-js {
+  font-size: 46px;
+  color: rgb(230, 230, 22);
+  text-emphasis-color: black;
+}
+i.fa-css3 {
+  font-size: 46px;
+  color: lightblue;
+  text-decoration: none;
+}
+i.fa-html5 {
+  font-size: 46px;
+  color: rgb(160, 21, 21);
+}
+i.fa-react {
+  font-size: 46px;
+  color: lightblue;
+}
+i.fa-whatsapp {
+  font-size: 38px;
+  color: rgb(19, 167, 19);
+}
+i.fa-linkedin {
+  font-size: 38px;
+  color: blue;
+}
+i.fa-instagram {
+  font-size: 38px;
+  color: rgb(255, 192, 203);
+}
+i.fa-square-x-twitter {
+  font-size: 38px;
+}
+#tab {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+footer {
+  background-color: rgb(79, 79, 85);
   padding: 10px;
-  text-align: center;
-}
-#container {
-  margin-top: 0px;
-  display: flex;
-  padding: 10px 450px;
-  max-width: 80%;
-  margin-left: 0px;
-  margin-right: 0px;
-  color: white;
-  margin: auto;
-}
-form button {
-  cursor: pointer;
+  margin: 5px;
 }
 button {
-  padding-right: 30px;
-  padding-left: 30px;
-  max-width: 60%;
-  margin: 10px 0;
-  margin-left: 15px;
-  margin-top: 10px;
-}
-button#withdraw button:hover {
+  float: left;
   background-color: white;
+  color: blue;
+  text-align: center;
+  padding: 10px 10px;
+  border: 0;
+  cursor: pointer;
+  box-shadow: 5px 7px 10px rgba(3, 3, 3, 0.439);
 }
-button#deposit button:hover {
-  background-color: blue;
-}
-div.transaction {
-  align-items: center;
-}
-table,
-th,
-td {
-  border: 1px solid black;
-  border-collapse: collapse;
-  padding: 20px;
-  margin: auto;
-  max-width: 60%;
+button:hover {
+  box-shadow: 5px 7px 10px lightblue;
 }
