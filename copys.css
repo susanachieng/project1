@@ -1,19 +1,18 @@
-/* Reset CSS */
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
-
-/* Body */
-body {
-  font-family: "Roboto", sans-serif;
-  line-height: 1.6;
+* body {
+  background-color: rgba(19, 20, 20, 0.35);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  font-style: normal;
   padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
+  margin: 0;
 }
-
 /* Container */
 div.code {
   max-width: 1200px;
@@ -29,41 +28,28 @@ nav ul {
   padding: 10px;
 }
 
-nav ul li a {
-  text-decoration: none;
-  padding: 10px;
-  color: white;
-  font-weight: bold;
+header {
+  background-color: grey;
+  background-image: url(images/suzy.mp4);
+  background-size: 100%;
+  background-position: center;
+  text-align: center;
+  height: 100px;
+  padding-top: 35px;
 }
-
-nav ul li a:hover {
-  color: #f4f4f4;
-  background-color: #555;
-}
-
-.fa-bars {
-  display: none;
-  font-size: 24px;
-  color: white;
-  cursor: pointer;
-}
-/* Section Styling */
-section {
-  margin: 40px 0;
+li {
+  display: inline;
   padding: 20px;
+  margin: 10px;
 }
-
-section h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
+li a {
+  margin-top: 5px;
+  color: black;
+  text-decoration: none;
 }
-
-#About p,
-#Work p,
-#Contact p {
-  margin-bottom: 20px;
+li a:hover {
+  color: white;
 }
-
 #About img {
   width: 150px;
   height: auto;
@@ -71,7 +57,27 @@ section h2 {
   display: block;
   margin: 10px auto;
 }
-/* Form Styling */
+h2 {
+  padding: 10px;
+  margin: 10px;
+  text-transform: uppercase;
+  color: grey;
+}
+#container {
+  display: flex;
+  float: right;
+  padding: 10px;
+  margin: 2px;
+}
+
+div.code {
+  font-size: 23px;
+  margin: 60px;
+  padding: 0;
+}
+b {
+  font-size: 10px;
+}
 form {
   display: flex;
   flex-direction: column;
@@ -99,21 +105,21 @@ form button:hover {
   background-color: #555;
 }
 i.fa-js {
-  font-size: 25px;
+  font-size: 46px;
   color: rgb(230, 230, 22);
   text-emphasis-color: black;
 }
 i.fa-css3 {
-  font-size: 25px;
+  font-size: 46px;
   color: lightblue;
   text-decoration: none;
 }
 i.fa-html5 {
-  font-size: 250x;
+  font-size: 46px;
   color: rgb(160, 21, 21);
 }
 i.fa-react {
-  font-size: 25px;
+  font-size: 46px;
   color: lightblue;
 }
 i.fa-whatsapp {
@@ -131,7 +137,11 @@ i.fa-instagram {
 i.fa-square-x-twitter {
   font-size: 38px;
 }
-/* Footer */
+#tab {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
 footer {
   background-color: #333;
   color: white;
